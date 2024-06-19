@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Object Detection</title>
+  </head>
+  <body>
+    <h1>Upload a video to detect objects</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <input type="file" name="file">
+      <input type="submit" value="Upload">
+    </form>
+    <h1>Realtime Object Detection</h1>
+    <img src="{{ url_for('video_feed') }}" width="640" height="480">
+  </body>
+</html>
